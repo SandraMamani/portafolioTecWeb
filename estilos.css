@@ -1,0 +1,379 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --primary: #089ea8;
+    --primary-white: #b1cfd15b;
+    --secondary: #a808a0;
+    --secondary-white: #b157ac9a;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-white);
+    text-decoration-thickness: 5px;
+}
+
+#proyectos .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #c3d3ff;
+    text-decoration-thickness: 5px;
+}
+
+#inicio {
+    background-image: url('Imagenes/jaelFondo.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: whitesmoke;
+    opacity: 0.87;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 5px 0;
+}
+
+header a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary);
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+}
+a:hover{
+    background-color: var(--primary);
+    color: #fff;
+    border-color: whitesmoke;}
+
+        
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column ;
+    align-items: left;
+    justify-content: center;
+}
+
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion .hola{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: left;  
+}
+#inicio .contenido .presentacion span {
+    font-size: 50px;
+    color: var(--primary);
+    display: block;
+    white-space: nowrap;
+    text-align: center; 
+    border-right: 4px solid;
+    width: 23ch;
+    overflow:hidden;
+    font-family: 'Space Mono', monospace; 
+}
+
+#inicio .contenido .presentacion .descripcion{
+    max-width: 900px;
+    margin: 25px auto;
+    font-size: 23px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: black;
+    display: flex;
+    
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#sobremi .sobremi {
+    margin: 0 20px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-white);
+    text-decoration-thickness: 3px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span {
+    color: var(--primary);
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 14px;
+    line-height: 30px;
+    color:black;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary);
+    border-radius: 10px;
+    border: 1px solid var(--secondary);
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: whitesmoke;
+}
+
+#habilidades {
+    padding: 100px 15px;
+    text-align: center;
+    background-image:  url("Imagenes/habil.gif");
+    background-size: cover;
+    background-attachment: scroll, fixed;}
+
+#habilidades .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+#habilidades .servicio img{
+    width: 200px;
+}
+
+#habilidades .fila .servicio {
+    max-width: 350px;
+    background-color: var(--primary-white);
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#habilidades .fila .servicio:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#habilidades .fila .servicio .icono {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .servicio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#habilidades .fila .servicio p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#proyectos {
+    max-width: 1100px;
+    padding: 200px 0;
+    margin: auto;
+    padding-bottom: 200px;
+
+}
+
+#proyectos .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+#proyectos .info{
+    text-align: center;
+}
+
+#proyectos .fila .proyecto {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#proyectos .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+#proyectos .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#proyectos .fila .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(39, 38, 38, 0.8);
+    color: white;
+    width: 100%;
+    padding: 100px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#proyectos .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .redes img{
+    width: 40px;
+}
+@media screen and (max-width: 800px) {
+
+    #inicio .contenido header nav ul {
+        flex-direction:column;
+        font-size: 12px;       
+    }
+    
+
+    #inicio .contenido .presentacion .descripcion {
+        font-size: 20px;
+    }
+
+    #inicio .contenido .presentacion span {
+        font-size: 24px;
+        padding-left: 7px;
+        white-space: nowrap;
+    }
+
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+    #sobremi .contenedor-foto img {
+        padding: 8px;
+    }
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #habilidades {
+        padding: 50px 15px;
+    }
+    #habilidades .fila {
+        display: block;
+    }
+    #habilidades .fila .servicio {
+        margin: 10px auto;
+    }
+    #proyectos {
+        padding: 50px 0;
+    }
+    #proyectos .fila {
+        display: block;
+    }
+    #proyectos .fila .proyecto {
+        margin: 10px auto;
+    }
+}
